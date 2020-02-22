@@ -1,1 +1,1 @@
-# medical_physics_in_Belarus
+# Медицинская физика в Беларуси
