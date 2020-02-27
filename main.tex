@@ -1,0 +1,197 @@
+
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[a4paper,10pt]{extarticle}
+
+%\usepackage{blindtext} % Package to generate dummy text throughout this template 
+
+
+%\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1}
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[english,russian]{babel} 
+\usepackage{fontspec} 
+\defaultfontfeatures{Ligatures={TeX},Renderer=Basic} 
+\setmainfont[Ligatures={TeX,Historic}]{Times New Roman} 
+
+% Language hyphenation and typographical rules
+
+\sloppy             % Избавляемся от переполнений
+\hyphenpenalty=1000 % Частота переносов
+\clubpenalty=10000  % Запрещаем разрыв страницы после первой строки абзаца
+\widowpenalty=10000 % Запрещаем разрыв страницы после последней строки абзаца
+
+\usepackage{textcase}    % to connect the registers 
+
+
+\usepackage{geometry}
+\geometry{left=2.5cm}
+\geometry{right=2cm}
+\geometry{top=2cm}
+\geometry{bottom=2.5cm}
+
+%\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+
+%\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+
+\usepackage{enumitem} % Customized lists
+\setlist[itemize]{noitemsep} % Make itemize lists more compact
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+%\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+\renewcommand{\baselinestretch}{1}
+\parindent 1.27cm
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\roman{subsection}} % roman numerals for subsections
+\titleformat{\section}[block]{\large\centering\bfseries\MakeTextUppercase}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{Ефименко А.Д. $\bullet$ Май 20120 $\bullet$ МГЭМ им. А.Д. Сахарова БГУ} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\usepackage{titling} % Customizing the title section
+
+\usepackage{hyperref} % For hyperlinks in the PDF
+
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\setlength{\droptitle}{-6\baselineskip} % Move the title up
+
+\pretitle{\begin{center}\bfseries\MakeTextUppercase} % Article title formatting \bfseries -- жирный шрифт \itshape -- курсив
+\posttitle{\end{center}} % Article title closing formatting
+\title{Медицинская физика в Республике Беларусь} % Article title
+
+\begin{author}
+{
+\textsc 
+{\MakeTextUppercase{\bfseries \normalsize Medical physics in the Republic of Belarus}}\\ \\{\bfseries А.Д. Ефименко} \\ \\ {\bfseries A.D. Ephimenko}\\ \\% Your name
+%\thanks{A thank you or further information} \\[1ex] 
+\normalsize \itshape Белорусский государственный университет МГЭИ им. А.Д.Сахарова БГУ \\ 
+\normalsize \itshape г. Минск Республика Беларусь \\ 
+\normalsize \itshape ISEU BSU, Minsk Republic of Belarus \\ % Your institution
+\normalsize \href{mailto:ialexefimenko@icloud.com}{ialexefimenko@icloud.com} % Your email address
+}
+\end{author}
+%\date{\today} % Leave empty to omit a date
+\renewcommand{\maketitlehookd}
+{
+\begin{abstract}
+\noindent \normalsize \scshape 
+% \scshape -- отмена курсива 
+ \\
+
+
+\itshape Keywords: \scshape 
+ 
+\end{abstract}
+}
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% Print the title
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section{Введение}
+
+%\lettrine[nindent=0em,lines=3]{L} orem ipsum dolor sit amet, consectetur adipiscing elit.
+%\blindtext % Dummy text
+
+%\blindtext % Dummy text
+
+%------------------------------------------------
+
+\section{Общие характеристики специальности}
+
+
+
+
+
+
+%------------------------------------------------
+
+\section{Высшее образование и профессиональная подготовка}
+
+\begin{table}
+\caption{Пример таблицы}
+\centering
+\begin{tabular}{llr}
+\toprule
+\multicolumn{2}{c}{Name} \\
+\cmidrule(r){1-2}
+First name & Last Name & Grade \\
+\midrule
+John & Doe & $7.5$ \\
+Richard & Miles & $2$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%\blindtext % Dummy text
+%
+%\begin{equation}
+%\label{eq:emc}
+%\frac{dp}{dt}=\vec{F}
+%\end{equation}
+
+%\blindtext % Dummy text
+
+%------------------------------------------------
+
+\section{Аспекты значимости работников}
+
+\subsection{}
+
+A statement requiring citation \cite{No174}.
+%\blindtext % Dummy text
+
+\subsection{}
+
+%\blindtext % Dummy text
+%------------------------------------------------
+
+\section{Перспективы развития}
+
+%------------------------------------------------
+
+\section{Рекомендации по продвижению соответствующих специалистов}
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
+
+\bibitem [1] {No174}
+Guibelade E., Christifides S., Caruna C.J., Evans S., van der Putten W.
+\newblock Radiation Protection 174. European Guidelines on medical physics expert.  
+\newblock Directorate-General for Energy Directorate D — Nuclear Safety. Fuel Cycle Unit D.3 — Radiation Protection.
+2014;	%	{\em Human Nature}
+% \bibitem [2]
+% \bibitem [3]
+\end{thebibliography}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
