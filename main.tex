@@ -27,6 +27,7 @@
 
 \usepackage{textcase}    % to connect the registers 
 
+\usepackage{indentfirst}   %следующая после заголовка раздела строка текста как была, так и осталась лишённой отступа. Так принято в британской полиграфической традиции
 
 \usepackage{geometry}
 \geometry{left=2.5cm}
@@ -46,8 +47,11 @@
 \usepackage{abstract} % Allows abstract customization
 \renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
 %\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
 \renewcommand{\baselinestretch}{1}
-\parindent 1.27cm
+\parindent 5ex
+
+
 \usepackage{titlesec} % Allows customization of titles
 \renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
 \renewcommand\thesubsection{\roman{subsection}} % roman numerals for subsections
@@ -73,14 +77,18 @@
 
 \setlength{\droptitle}{-6\baselineskip} % Move the title up
 
-\pretitle{\begin{center}\bfseries\MakeTextUppercase} % Article title formatting \bfseries -- жирный шрифт \itshape -- курсив
+\pretitle{\begin{center}\bfseries\MakeTextUppercase}
+%\hyphenation
+ % Article title formatting \bfseries -- жирный шрифт \itshape -- курсив
 \posttitle{\end{center}} % Article title closing formatting
-\title{Медицинская физика в Республике Беларусь} % Article title
+\title{Рабочая сила медицинской физики мирового сообщества и ее 
+сопоставление в Республике Беларусь} % Article title
+
 
 \begin{author}
 {
 \textsc 
-{\MakeTextUppercase{\bfseries \normalsize Medical physics in the Republic of Belarus}}\\ \\{\bfseries А.Д. Ефименко} \\ \\ {\bfseries A.D. Ephimenko}\\ \\% Your name
+{\MakeTextUppercase{\bfseries \normalsize Workforce of medical physics of the world community}}\\{\MakeTextUppercase{\bfseries \normalsize and its comparison in the Republic of Belarus }} \\{\bfseries А.Д. Ефименко} \\ \\ {\bfseries A.D. Ephimenko}\\ \\% Your name    and its comparison in the Republic of Belarus
 %\thanks{A thank you or further information} \\[1ex] 
 \normalsize \itshape Белорусский государственный университет МГЭИ им. А.Д.Сахарова БГУ \\ 
 \normalsize \itshape г. Минск Республика Беларусь \\ 
@@ -97,7 +105,7 @@
  \\
 
 
-\itshape Keywords: \scshape 
+\itshape Ключевые слова: \scshape 
  
 \end{abstract}
 }
@@ -114,7 +122,13 @@
 %	ARTICLE CONTENTS
 %----------------------------------------------------------------------------------------
 
-\section{Введение}
+\section{Введение}{\parindent 1.27cm}
+
+Почти сразу же после открытия рентгеновских лучей в конце XIX века \cite{W. C. Röntgen} ионизирующее излучение нашло применение в диагностике и лечении широкого спектра заболеваний человека, а также в промышленности, научных кругах, энергетике и национальной обороне. Несмотря на то, что мировое федеральное правительство содействовало созданию сообщества профессионалов, обеспечивающих безопасное и полезное использование радиации, число специалистов по радиации в последнее время тревожно сократилось,, когда в нашей стране еще происходит ее развитие,  о чем свидетельствуют документы нескольких уважаемых организаций \cite{USGAO 2014}\cite{HPS 2013}\cite{NCRP 2015}. Совсем недавно МКРЗ опубликовали заявление под названием <<Где находятся специалисты по радиации?>>, которая предупредила о возможности того, что будущие национальные потребности в ряде соответствующих секторов, включая медицину, могут остаться неудовлетворенными \cite{NCRP 2015}.
+
+Подчеркивается большая неопределенность, сильная зависимость от предполагаемых входных параметров и высокий уровень сложности проблемы в подходе к профессии медицинский физик \cite{Mills MD.2014}. Кроме того, она продолжает существенно развиваться. Разумно рассмотреть возможность того, что трудовых ресурсов может быть недостаточно, и продумать стратегии мониторинга риска для мирового сообщества медицинских физиков.
+
+Касательно Беларуси, профессия еще неустоявшаяся. Выходя на мировой уровень, в первую очередь необходимо разработать и внедрить приспособления и технологии для обеспечения качества диагностических и терапевтических процедур. организовать работу по разъяснению работникам организации здравоохранения вопросов обеспечения безопасности пациентов и работников, после этого и решение задач будет обсуждаться совместно с международным сообществом.
 
 %\lettrine[nindent=0em,lines=3]{L} orem ipsum dolor sit amet, consectetur adipiscing elit.
 %\blindtext % Dummy text
@@ -123,9 +137,11 @@
 
 %------------------------------------------------
 
-\section{Общие характеристики специальности}
+\section{Кадровая характеристика медицинской физики}
 
+В мире насчитывается около 24 000 медицинских физиков \cite{IOMP}, из которых чуть более трети, или 8205, находятся в Соединенных Штатах \cite{AAPM1} и 2303 -- в Европе \cite{Lievens}. Дополнительная и более конкретная информация поступает от Американской ассоциации физиков в медицине (AAPM), которая ежегодно проводит опрос своих членов и предоставляет описательные статистические данные, имеющие отношение к национальной рабочей силе, но только на пространстве США. К примеру, у них на 2018 год, по данным 2565 респондентов, 51\% и 49\% имели степень магистра и доктора наук соответственно. Большинство (76\%)  медицинских физиков занимались радиационной онкологией в качестве своей основной специальности, и почти все (94\%) были заняты на полный рабочий день, и только 3\% были фрилансеры-консультанты. Как видно, проблем с численностью медицинской рабочей силы нет, в целом она находится в равновесии с потребностями страны. В США и нескольких других странах медицинская физика четко определенная, устоявшаяся и зрелая профессия. 
 
+В СССР медицинская физика появилась в 60--e годы прошлого века, на данный момент в России насчитывается около 500 человек при очень низкой <<плотности>> населения \cite{Костылёв}, а в нашей стране и вовсе на 468 человек меньше \cite{Тарутин}.
 
 
 
@@ -133,21 +149,28 @@
 %------------------------------------------------
 
 \section{Высшее образование и профессиональная подготовка}
+Профессия медицинская физика пользовалась успехом на протяжении многих десятилетий, в результате возникшего интеллектуального разнообразия подхода обучения -- для многих физиков до начала нынешнего века их образование было докторской степенью по физике вместе с обучением на рабочем месте и самоподготовкой по медицинской физике.  Однако, компетентность и готовность медицинских физиков к выполнению клинической работы были весьма сомнительны. 
 
-\begin{table}
-\caption{Пример таблицы}
-\centering
-\begin{tabular}{llr}
-\toprule
-\multicolumn{2}{c}{Name} \\
-\cmidrule(r){1-2}
-First name & Last Name & Grade \\
-\midrule
-John & Doe & $7.5$ \\
-Richard & Miles & $2$ \\
-\bottomrule
-\end{tabular}
-\end{table}
+Сегодня пути к тому, чтобы стать квалифицированным (клиническим) медицинским физиком, четко определены и стандартизированы. Рис. 2 показывает траектории обучения, начинающиеся с получения степени бакалавра по физике (или равнозначимой смежной области) и заканчивающиеся занятием начального уровня в данной специальности.
+Согласно AAPM, квалифицированный медицинский физик получил степень магистра и/или доктора в области физики, медицинской физики, биофизики, радиологической физики, медицинской физики здоровья или равнозначимых дисциплин в аккредитованном колледже/университете. Кроме того, квалификация требует сертификации в конкретной области медицинской физики, соответствующим национальным органом по сертификации и соблюдения текущих требований к непрерывному образованию \cite{AAPM 2016b}.
+
+
+
+
+%\begin{table}
+%\caption{Пример таблицы}
+%\centering
+%\begin{tabular}{llr}
+%\toprule
+%\multicolumn{2}{c}{Name} \\
+%\cmidrule(r){1-2}
+%First name & Last Name & Grade \\
+%\midrule
+%John & Doe & $7.5$ \\
+%Richard & Miles & $2$ \\
+%\bottomrule
+%\end{tabular}
+%\end{table}
 
 %\blindtext % Dummy text
 %
@@ -164,7 +187,9 @@ Richard & Miles & $2$ \\
 
 \subsection{}
 
-A statement requiring citation \cite{No174}.
+
+
+%A statement requiring citation \cite{No174}.
 %\blindtext % Dummy text
 
 \subsection{}
@@ -176,20 +201,56 @@ A statement requiring citation \cite{No174}.
 
 %------------------------------------------------
 
-\section{Рекомендации по продвижению соответствующих специалистов}
+%\section{Рекомендации по продвижению соответствующих специалистов}
 %----------------------------------------------------------------------------------------
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
 
 \begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
 
-\bibitem [1] {No174}
-Guibelade E., Christifides S., Caruna C.J., Evans S., van der Putten W.
-\newblock Radiation Protection 174. European Guidelines on medical physics expert.  
-\newblock Directorate-General for Energy Directorate D — Nuclear Safety. Fuel Cycle Unit D.3 — Radiation Protection.
-2014;	%	{\em Human Nature}
-% \bibitem [2]
-% \bibitem [3]
+\bibitem {W. C. Röntgen}
+W. C. Röntgen. Ueber eine neue Art von Strahlen // Sonderabbdruck aus den Sitzungsberichten der Würzburger Physik.medic. Gesellschaft. — 1895;
+
+\bibitem {USGAO 2014}
+U.S. Government Accountability Office. Federal workforce: recent trends in federal civilian employment and compensation. Washington, DC: GAO;14 -- 215; 2014;
+
+\bibitem {HPS 2013}
+Health Physics Society. Health physics education reference book. Health Physics Society Academic Education Committee. McLean, VA: HPS; 2010;
+
+\bibitem {NCRP 2015}
+National Council on Radiation Protection and Measurements. Where are the radiation professionals (WARP)? Bethesda, MD: NCRP; Statement No. 12; 2015;
+
+\bibitem {Mills MD.2014} 
+Mills MD. The meaning of the MS degree in medical physics, part 3. 2014;
+
+\bibitem {IOMP}
+International Organization for Medical Physics. Organization. Athens, Greece: IOMP; 2016. Available at www.iomp.org/? q=content/organisation. Accessed 9 August 2016;
+
+\bibitem {AAPM1}
+American Association of Physicists in Medicine. Professional survey report, calendar year 2015. College Park, MD: AAPM; 2016a;
+
+\bibitem {Lievens}
+Lievens Y, Defourny N, Coffey M, Borras JM, Dunscombe P, Slotman B, Malicki J, Bogusz M, Gasparotto C, Grau C, Kokobobo A, Sedlmayer F, Slobina E, Coucke P, Gabrovski R, Vosmik M, Eriksen JG, Jaal J, Dejean C, Polgar C, Johannsson J, Cunningham M, Atkocius V, Back C, Pirotta M, Karadjinovic V, Levernes S, Maciejewski B, Trigo ML, Šegedin B, Palacios A, Pastoors B, Beardmore C, Erridge S, Smyth G, Soler RC. Radiotherapy staffing in the European countries: final results from the ESTRO-HERO survey. Radiother Oncol 112:178–186; 2014.
+
+
+\bibitem {Костылёв}
+Костылёв, В.А., Наркевич, Б.Я.. Радиационная медицинская физика: прошлое, настоящее и будущее. Медицинская радиология и радиационная безопасность. -- 2006, --  Том 51, N1;
+
+\bibitem {Тарутин}
+Патыко, Д.. Нужны ли в больницах медицинские физики? -- Медицинский вестник. -- 2019. -- N 39 от 3 октября. -- с. 4;
+
+\bibitem {AAPM 2016b}
+American Association of Physicists in Medicine. Medical physicist. Definition of a qualified medical physicist. 2016b. Available at \href{https://w3.aapm.org/medical_physicist/fields.php}{Definition of a Qualified Medical Physicist}. Accessed 9 August 2016;
+
+
+ 
+%\bibitem {No174}
+%Guibelade E., Christifides S., Caruna C.J., Evans S., van der Putten W.
+%\newblock Radiation Protection 174. European Guidelines on medical physics expert.  
+%\newblock Directorate-General for Energy Directorate D — Nuclear Safety. Fuel Cycle Unit D.3 — Radiation Protection.
+%2014;	%	{\em Human Nature}
+
+%\bibitem [3]
 \end{thebibliography}
 
 %----------------------------------------------------------------------------------------
