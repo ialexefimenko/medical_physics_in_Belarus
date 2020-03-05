@@ -70,6 +70,33 @@
 \usepackage{hyperref} % For hyperlinks in the PDF
 
 
+\RequirePackage{caption}
+\DeclareCaptionLabelSeparator{defffis}{ -- } % Разделитель
+\captionsetup[figure]{justification=centering, labelsep=defffis, format=plain} % Подпись рисунка по центру
+\captionsetup[table]{justification=raggedright, labelsep=defffis, format=plain, singlelinecheck=false} % Подпись таблицы слева
+\addto\captionsrussian{\renewcommand{\figurename}{Рис.}} % Имя фигуры
+
+% Пути к каталогам с изображениями
+\usepackage{graphicx} % Вставка картинок и дополнений
+\DeclareGraphicsExtensions{.png,.jpg}
+\graphicspath{{image/}} 					%{image/userguide/}
+
+\newcommand{\addimg}[4]{ % Добавление одного рисунка
+    \begin{figure}
+        \centering
+        \includegraphics[width=#2\linewidth]{#1}
+        \caption{#3} \label{#4}
+    \end{figure}
+}
+\newcommand{\addimghere}[4]{ % Добавить рисунок непосредственно в это место
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=#2\linewidth]{#1}
+        \caption{#3} \label{#4}
+    \end{figure}
+}
+
+
 
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
@@ -88,7 +115,7 @@
 \begin{author}
 {
 \textsc 
-{\MakeTextUppercase{\bfseries \normalsize Workforce of medical physics of the world community}}\\{\MakeTextUppercase{\bfseries \normalsize and its comparison in the Republic of Belarus }} \\{\bfseries А.Д. Ефименко} \\ \\ {\bfseries A.D. Ephimenko}\\ \\% Your name    and its comparison in the Republic of Belarus
+{\MakeTextUppercase{\bfseries \normalsize Workforce of medical physics of the world community}}\\{\MakeTextUppercase{\bfseries \normalsize and its comparison in the Republic of Belarus }} \\ \\{\bfseries А.Д. Ефименко, Л.А. Липницкий} \\ \\ {\bfseries A.D. Ephimenko, L.A. Lipnitsky}\\ \\% Your name    and its comparison in the Republic of Belarus
 %\thanks{A thank you or further information} \\[1ex] 
 \normalsize \itshape Белорусский государственный университет МГЭИ им. А.Д.Сахарова БГУ \\ 
 \normalsize \itshape г. Минск Республика Беларусь \\ 
@@ -100,7 +127,8 @@
 \renewcommand{\maketitlehookd}
 {
 \begin{abstract}
-\noindent \normalsize \scshape 
+\noindent \normalsize \scshape Сегодня профессия медицинской физики является признанной, устоявшейся и зрелой, которая претерпевает значительный рост и изменения, причем многие из этих изменений обусловлены научными, техническими и медицинскими достижениями. В настоящее время рабочая сила медицинской физики достаточна для удовлетворения общественных потребностей в большинстве стран мира, Беларусь в этом только набирает обороты, но квалифицированного персонала с каждым годом становится больше, хотя и существуют явные проблемы в образовательном аспекте. Для становления квалифицированным (клиническим) медицинским физиком определен план обучения, и казалось, какие могут быть проблемы на этот счет. Но нет, имеются потенциальные проблемы по дефициту кадров, которые могут возникнуть в течение нескольких лет.  Некоторые из определяющих факторов хорошо известны, такие как увеличение числа раковых заболеваний, что приводит к увеличению рабочей нагрузки, в то время как другие, такие как будущее использование лучевых методов лечения и изменения в экономической политике здравоохранения, являются неопределенными и затрудняют прогнозирование будущего состояния рабочей силы в течение следующих нескольких лет. В работе рассматриваются некоторые из основных факторов, определяющих спрос и предложение медицинских физиков в мире, и в частности, Республике Беларусь. Описаны общие характеристики работников, включая информацию о ее численности и уровне образования. На основе анализа литературных данных были выдвинуты рекомендации по продвижению и развитию медицинских физиков в Беларуси, а также рассмотрены перспективы будущего персонала на основании существующих проблем в мировом сообществе. \\ \\
+Today, the medical physics profession is recognized, established, and Mature, and is undergoing significant growth and changes, many of which are due to scientific, technical, and medical advances. Currently, the workforce of medical physics is sufficient to meet the public needs in most countries of the world, Belarus is only gaining momentum, but the number of qualified personnel is increasing every year, although there are obvious problems in the educational aspect. To become a qualified (clinical) medical physicist, a training plan was defined, and it seemed that there might be problems in this regard. But no, there are potential problems with staff shortages that may occur within a few years.  Some of the determinants are well known, such as an increase in the number of cancers that lead to increased workloads, while others, such as the future use of radiation treatments and changes in economic health policy, are uncertain and make it difficult to predict the future state of the workforce over the next few years. The paper considers some of the main factors that determine the demand and supply of medical physicists in the world, and in particular in the Republic of Belarus. General characteristics of employees are described, including information about their number and level of education. Based on the analysis of the literature data, recommendations were made for the promotion and development of medical physicists in Belarus, as well as the prospects for future personnel based on existing problems in the world community.
 % \scshape -- отмена курсива 
  \\
 
@@ -130,6 +158,8 @@
 
 Касательно Беларуси, профессия еще неустоявшаяся. Выходя на мировой уровень, в первую очередь необходимо разработать и внедрить приспособления и технологии для обеспечения качества диагностических и терапевтических процедур. организовать работу по разъяснению работникам организации здравоохранения вопросов обеспечения безопасности пациентов и работников, после этого и решение задач будет обсуждаться совместно с международным сообществом.
 
+
+\addimg{edpath}{1}{Пути обучения в области медицинской физики \cite{Silverstein}.}{edpath}
 %\lettrine[nindent=0em,lines=3]{L} orem ipsum dolor sit amet, consectetur adipiscing elit.
 %\blindtext % Dummy text
 
@@ -141,7 +171,7 @@
 
 В мире насчитывается около 24 000 медицинских физиков \cite{IOMP}, из которых чуть более трети, или 8205, находятся в Соединенных Штатах \cite{AAPM1} и 2303 -- в Европе \cite{Lievens}. Дополнительная и более конкретная информация поступает от Американской ассоциации физиков в медицине (AAPM), которая ежегодно проводит опрос своих членов и предоставляет описательные статистические данные, имеющие отношение к национальной рабочей силе, но только на пространстве США. К примеру, у них на 2018 год, по данным 2565 респондентов, 51\% и 49\% имели степень магистра и доктора наук соответственно. Большинство (76\%)  медицинских физиков занимались радиационной онкологией в качестве своей основной специальности, и почти все (94\%) были заняты на полный рабочий день, и только 3\% были фрилансеры-консультанты. Как видно, проблем с численностью медицинской рабочей силы нет, в целом она находится в равновесии с потребностями страны. В США и нескольких других странах медицинская физика четко определенная, устоявшаяся и зрелая профессия. 
 
-В СССР медицинская физика появилась в 60--e годы прошлого века, на данный момент в России насчитывается около 500 человек при очень низкой <<плотности>> населения \cite{Костылёв}, а в нашей стране и вовсе на 468 человек меньше \cite{Тарутин}.
+В СССР медицинская физика появилась в 60--e годы прошлого века, на данный момент в России насчитывается около 500 человек при очень низкой <<плотности>> населения \cite{Костылёв}, а в нашей стране и вовсе на 468 человек меньше \cite{Тарутин}. ..............
 
 
 
@@ -151,8 +181,12 @@
 \section{Высшее образование и профессиональная подготовка}
 Профессия медицинская физика пользовалась успехом на протяжении многих десятилетий, в результате возникшего интеллектуального разнообразия подхода обучения -- для многих физиков до начала нынешнего века их образование было докторской степенью по физике вместе с обучением на рабочем месте и самоподготовкой по медицинской физике.  Однако, компетентность и готовность медицинских физиков к выполнению клинической работы были весьма сомнительны. 
 
-Сегодня пути к тому, чтобы стать квалифицированным (клиническим) медицинским физиком, четко определены и стандартизированы. Рис. 2 показывает траектории обучения, начинающиеся с получения степени бакалавра по физике (или равнозначимой смежной области) и заканчивающиеся занятием начального уровня в данной специальности.
-Согласно AAPM, квалифицированный медицинский физик получил степень магистра и/или доктора в области физики, медицинской физики, биофизики, радиологической физики, медицинской физики здоровья или равнозначимых дисциплин в аккредитованном колледже/университете. Кроме того, квалификация требует сертификации в конкретной области медицинской физики, соответствующим национальным органом по сертификации и соблюдения текущих требований к непрерывному образованию \cite{AAPM 2016b}.
+Сегодня пути к тому, чтобы стать квалифицированным (клиническим) медицинским физиком, четко определены и стандартизированы согласно рекомендациям МКРЗ. Рис.\ref{edpath} показывает траектории обучения, начинающиеся с получения степени бакалавра по физике (или равнозначимой смежной области) и заканчивающиеся получением начального уровня в данной специальности.
+Согласно AAPM, квалифицированный медицинский физик сможет получить степень магистра и/или доктора в области физики, медицинской физики, биофизики, радиологической физики, медицинской физики здоровья или равнозначимых дисциплин в аккредитованном колледже/университете. Кроме того, квалификация требует сертификации в конкретной области медицинской физики, соответствующим национальным органом по сертификации и соблюдения текущих требований к непрерывному образованию \cite{AAPM 2016b}. 
+
+Так устроено образование за рубежом. В РБ с образованием ситуация такова: Минский государственный экологический институт имени Андрея Дмитриевича Сахарова при Белорусском государственном университете выпускает с 2018 года студентов по специальности <<медицинский физик>>. Затем следует поступление на магистратуру, после чего -- заступление на рабочее место по обслуживанию ускорителей, по разработке и внедрению приспособлений технологий для обеспечения качества диагностических и терапевтических процедур, занимается организаторской работой по разъяснению работникам организации здравоохранения вопросов обеспечения безопасности пациентов и работников. ..............
+
+%\includegraphics{edpath} \\ {Рис.1 -- }{Внутренние и внешние связи подсистемы управления услугами}
 
 
 
@@ -183,21 +217,23 @@
 
 %------------------------------------------------
 
-\section{Аспекты значимости работников}
+\section{Профессиональные аспекты релятивности работников}
 
-\subsection{}
+
+
+%\subsection{}
 
 
 
 %A statement requiring citation \cite{No174}.
 %\blindtext % Dummy text
 
-\subsection{}
+%\subsection{}
 
 %\blindtext % Dummy text
 %------------------------------------------------
 
-\section{Перспективы развития}
+\section{Заключение}
 
 %------------------------------------------------
 
@@ -210,6 +246,9 @@
 
 \bibitem {W. C. Röntgen}
 W. C. Röntgen. Ueber eine neue Art von Strahlen // Sonderabbdruck aus den Sitzungsberichten der Würzburger Physik.medic. Gesellschaft. — 1895;
+
+\bibitem {Silverstein}
+Silverstein E, Burmeister J, Fullerton G. SDAMPP student guide to a medical physics career. Alexandria, VA: Society of Directors of Academic Medical Physics Programs; 2016;
 
 \bibitem {USGAO 2014}
 U.S. Government Accountability Office. Federal workforce: recent trends in federal civilian employment and compensation. Washington, DC: GAO;14 -- 215; 2014;
