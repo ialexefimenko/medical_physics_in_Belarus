@@ -20,8 +20,8 @@
 ## LaTeX
 Пример компиляции проекта с помощью Makefile:
 ```bash
-git clone https://github.com/.git
-cd /
+git clone https://github.com/ialexefimenko/workforce_MPh_RB.git
+cd workforce_MPh_RB/
 make
 ```
 
