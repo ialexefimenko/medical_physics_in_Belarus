@@ -1,0 +1,139 @@
+
+\documentclass[a4paper,10pt]{extarticle}
+
+%\usepackage{blindtext} % Package to generate dummy text throughout this template 
+
+
+%\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1}
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[english,russian]{babel} 
+\usepackage{fontspec} 
+\defaultfontfeatures{Ligatures={TeX},Renderer=Basic} 
+\setmainfont[Ligatures={TeX,Historic}]{Times New Roman} 
+
+% Language hyphenation and typographical rules
+
+\sloppy             % Избавляемся от переполнений
+\hyphenpenalty=1000 % Частота переносов
+\clubpenalty=10000  % Запрещаем разрыв страницы после первой строки абзаца
+\widowpenalty=10000 % Запрещаем разрыв страницы после последней строки абзаца
+
+\usepackage{textcase}    % to connect the registers 
+
+\usepackage{indentfirst}   %следующая после заголовка раздела строка текста как была, так и осталась лишённой отступа. Так принято в британской полиграфической традиции
+
+\usepackage{geometry}
+\geometry{left=2.5cm}
+\geometry{right=2cm}
+\geometry{top=2cm}
+\geometry{bottom=2.5cm}
+
+%\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+
+%\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+
+\usepackage{enumitem} % Customized lists
+\setlist[itemize]{noitemsep} % Make itemize lists more compact
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+%\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\renewcommand{\baselinestretch}{1}
+\parindent 5ex
+
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\roman{subsection}} % roman numerals for subsections
+\titleformat{\section}[block]{\large\centering\bfseries\MakeTextUppercase}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+%\usepackage{fancyhdr} % Headers and footers
+%\pagestyle{fancy} % All pages have headers and footers
+%\fancyhead{} % Blank out the default header
+%\fancyfoot{} % Blank out the default footer
+%\fancyhead[C]{Ефименко А.Д. $\bullet$ Май 20120 $\bullet$ МГЭМ им. А.Д. Сахарова БГУ} % Custom header text
+%\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\usepackage{titling} % Customizing the title section
+
+\usepackage{hyperref} % For hyperlinks in the PDF
+
+
+\RequirePackage{caption}
+\DeclareCaptionLabelSeparator{defffis}{ -- } % Разделитель
+\captionsetup[figure]{justification=centering, labelsep=defffis, format=plain} % Подпись рисунка по центру
+\captionsetup[table]{justification=raggedright, labelsep=defffis, format=plain, singlelinecheck=false} % Подпись таблицы слева
+\addto\captionsrussian{\renewcommand{\figurename}{Рис.}} % Имя фигуры
+
+% Пути к каталогам с изображениями
+\usepackage{graphicx} % Вставка картинок и дополнений
+\DeclareGraphicsExtensions{.png,.jpg,.pdf,.tif,.svg}
+\graphicspath{{image/}} 					%{image/userguide/}
+
+\newcommand{\addimg}[4]{ % Добавление одного рисунка
+    \begin{figure}
+        \centering
+        \includegraphics[width=#2\linewidth]{#1}
+        \caption{#3} \label{#4}
+    \end{figure}
+}
+\newcommand{\addimghere}[4]{ % Добавить рисунок непосредственно в это место
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=#2\linewidth]{#1}
+        \caption{#3} \label{#4}
+    \end{figure}
+}
+
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\setlength{\droptitle}{-6\baselineskip} % Move the title up
+
+\pretitle{\begin{center}\bfseries\MakeTextUppercase}
+%\hyphenation
+ % Article title formatting \bfseries -- жирный шрифт \itshape -- курсив
+\posttitle{\end{center}} % Article title closing formatting
+\title{Рабочая сила медицинской физики мирового сообщества и ее 
+сопоставление в Республике Беларусь} % Article title
+
+
+\begin{author}
+{
+\textsc 
+{\MakeTextUppercase{\bfseries \normalsize Workforce of medical physics of the world community}}\\{\MakeTextUppercase{\bfseries \normalsize and its comparison in the Republic of Belarus }} \\ \\{\bfseries А.Д. Ефименко, Л.А. Липницкий} \\ \\ {\bfseries A.D. Ephimenko, L.A. Lipnitsky}\\ \\% Your name    and its comparison in the Republic of Belarus
+%\thanks{A thank you or further information} \\[1ex] 
+\normalsize \itshape Белорусский государственный университет МГЭИ им. А.Д.Сахарова БГУ \\ 
+\normalsize \itshape г. Минск Республика Беларусь \\ 
+\normalsize \itshape ISEU BSU, Minsk Republic of Belarus \\ % Your institution
+\normalsize \href{mailto:ialexefimenko@icloud.com}{ialexefimenko@icloud.com} % Your email address
+}
+\end{author}
+
+\renewcommand{\maketitlehookd}
+{
+\begin{abstract}
+\scshape В настоящее время рабочая сила медицинской физики достаточна для удовлетворения общественных потребностей в большинстве стран мира, Беларусь в этом только набирает обороты, но квалифицированного персонала с каждым годом становится больше, хотя и существуют явные проблемы в образовательном аспекте. Для становления квалифицированным медицинским физиком определен план обучения, и казалось, какие могут быть проблемы на этот счет. Но нет, имеются потенциальные проблемы по дефициту кадров, которые могут возникнуть в течение нескольких лет. Некоторые из определяющих факторов хорошо известны, такие как увеличение числа раковых заболеваний, что приводит к увеличению рабочей нагрузки, в то время как другие, такие как будущее использование лучевых методов лечения и изменения в экономической политике здравоохранения, являются неопределенными и затрудняют прогнозирование будущего состояния рабочей силы в течение следующих нескольких лет. В работе рассматриваются некоторые из основных факторов, определяющих спрос и предложение медицинских физиков в мире, и в частности, Республике Беларусь. Описаны общие характеристики работников, включая информацию о ее численности и уровне образования. На основе анализа литературных данных были рассмотрены перспективы будущего персонала на основании существующих проблем в мировом сообществе. \\ 
+
+\scshape Today, the medical physics profession is recognized, established, and Mature, and is undergoing significant growth and changes, many of which are due to scientific, technical, and medical advances. Currently, the workforce of medical physics is sufficient to meet the public needs in most countries of the world, Belarus is only gaining momentum, but the number of qualified personnel is increasing every year, although there are obvious problems in the educational aspect. To become a qualified (clinical) medical physicist, a training plan was defined, and it seemed that there might be problems in this regard. But no, there are potential problems with staff shortages that may occur within a few years.  Some of the determinants are well known, such as an increase in the number of cancers that lead to increased workloads, while others, such as the future use of radiation treatments and changes in economic health policy, are uncertain and make it difficult to predict the future state of the workforce over the next few years. The paper considers some of the main factors that determine the demand and supply of medical physicists in the world, and in particular in the Republic of Belarus. General characteristics of employees are described, including information about their number and level of education. Based on the analysis of the literature data, the prospects for future personnel were considered based on existing problems in the world community.
+% \scshape -- отмена курсива 
+\\
+
+\itshape Ключевые слова: \scshape медицинский физик, образование, Международная Комиссия по Радиологической Защите, лучевая терапия.
+\\
+ 
+\itshape Keywords: \scshape medical physicist, education, International Commission on Radiological Protection, radiation therapy.
+ 
+\end{abstract}
+}
+

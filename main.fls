@@ -4,6 +4,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2019/texmf-var/web2c/xetex/xelatex.fmt
 INPUT main.tex
 OUTPUT main.log
+INPUT include/preamble.tex
+INPUT include/preamble.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/extsizes/extarticle.cls
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/extsizes/extarticle.cls
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
@@ -99,8 +101,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/titlesec/block.tss
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/titlesec/block.tss
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/titling/titling.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/titling/titling.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -166,7 +166,17 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT include/intro.tex
+INPUT include/intro.tex
 OUTPUT main.xdv
-INPUT image/edpath.jpg
+INPUT image/ed.png
+INPUT include/staff.tex
+INPUT include/staff.tex
+INPUT include/educate.tex
+INPUT include/educate.tex
+INPUT include/conclussion.tex
+INPUT include/conclussion.tex
+INPUT include/bibliography.tex
+INPUT include/bibliography.tex
 INPUT main.aux
 INPUT ./main.out

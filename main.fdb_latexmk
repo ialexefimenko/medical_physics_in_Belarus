@@ -1,10 +1,10 @@
 # Fdb version 3
-["xdvipdfmx"] 1583441142 "main.xdv" "main.pdf" "main" 1583441142
-  "main.xdv" 1583441141 117620 778cc46f93e2aae19ecc82934750c4ac "xelatex"
+["xdvipdfmx"] 1583757348 "main.xdv" "main.pdf" "main" 1583757350
+  "main.xdv" 1583757348 155196 cdae8dc89cd42ebe7d95cb1590d476c2 "xelatex"
   (generated)
   "main.pdf"
-["xelatex"] 1583441140 "main.tex" "main.xdv" "main" 1583441142
-  "/dev/null" 1583441095 0 d41d8cd98f00b204e9800998ecf8427e ""
+["xelatex"] 1583757346 "main.tex" "main.xdv" "main" 1583757350
+  "/dev/null" 1583757344 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -49,7 +49,6 @@
   "/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty" 1538606650 68510 943558eecf41da4e76fc614fd7f5deff ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/enumitem/enumitem.sty" 1549316214 51603 ccc7546d1e15809a779ade2c44d54044 ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/extsizes/extarticle.cls" 1137110130 20602 3112294ba237d94ce4a1502cfef3594f ""
-  "/usr/local/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1548974385 11128 a53805799bebfed6358fc1658a18e41f ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty" 1552596970 162782 92e494a761faab10e02c6d41ddd6c0b3 ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/fontspec/fontspec.cfg" 1532898934 549 c4adac819276241fea8eb79c5ab7b99e ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/fontspec/fontspec.sty" 1552596970 1655 57753047adce10eb33bdfbe8a8047704 ""
@@ -87,12 +86,18 @@
   "/usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf" 1557092114 35484 cb1661360667bf4db662a8895053b554 ""
   "/usr/local/texlive/2019/texmf-var/web2c/xetex/xelatex.fmt" 1583073894 3751080 85ea03f89ad32a36e95b893d0fb5b3d6 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "image/edpath.jpg" 1583440770 90728 852e77c6e7c86eac17897755168a490c ""
-  "main.aux" 1583441141 2508 d4726746f8bdc3f6391de8ab55c254a0 "xelatex"
-  "main.out" 1583441141 1463 0cf934e16dddbb233561420c2e4bd9ef "xelatex"
-  "main.tex" 1583441135 25412 5eeea3562dc65371d20721d742f2087e ""
+  "image/ed.png" 1583701776 509701 b5cd241595fbca0dcb0bdd81832bc9d5 ""
+  "include/bibliography.tex" 1583755195 3188 10c50a08fb630fc99073552326af65a3 ""
+  "include/conclussion.tex" 1583754158 3100 6db15e272ca5a5972ba74aed5485ef2a ""
+  "include/educate.tex" 1583757085 6375 3673be79532a84315d52afe6552678cb ""
+  "include/intro.tex" 1583754111 3957 4978ec5b2351da03418bb0c14378c7dd ""
+  "include/preamble.tex" 1583756041 10250 bcda4b35604c84351c5ac83dcf1b0e2b ""
+  "include/staff.tex" 1583754126 4816 2a0e7aa7f1c0204835fdef7dd00f8c23 ""
+  "main.aux" 1583757348 2403 54dc83d8bb29706f5a6b784d842e6ffd "xelatex"
+  "main.out" 1583757348 1068 c06c6392a51785dfa623fb99ef3c7a43 "xelatex"
+  "main.tex" 1583754425 457 1f0a6ef3e8f11ea4eea2a9b5957fc97b ""
   (generated)
+  "main.aux"
   "main.out"
   "main.xdv"
-  "main.aux"
   "main.log"
