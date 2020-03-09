@@ -5,8 +5,8 @@
 ## Контактная информация
 220070, Минск,
 ул. Долгобродская 23/1, Республика Беларусь
-## [сайт ISEU] http://www.iseu.by
-## [E-mail ISEU] (res_sector@iseu.by)
+## [сайт ISEU](http://www.iseu.by)
+## [E-mail ISEU](res_sector@iseu.by)
 
 ## Особенности
 * Использование XeLaTeX
